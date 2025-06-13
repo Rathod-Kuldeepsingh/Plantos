@@ -1,0 +1,374 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #f5f5f5;
+  }
+  
+  nav {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+  
+  h1 {
+    color: #8f9389;
+    font-weight: 700;
+  }
+  
+  .nav-ul,
+  .icons-ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+  }
+  
+  .nav-ul li a,
+  .icons-ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-ul li a:hover,
+  .icons-ul li a:hover {
+    color: #bec4b6;
+  }
+  
+  .icons-ul li i {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Hamburger hidden by default */
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+  .sec1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 20px;
+    height: 80vh;
+    background-color: #bec4b6;
+  }
+  .background {
+    border-radius: 20px;
+    background-image: url("assets/bg.webp");
+    background-repeat: no-repeat;
+    background-size:55%; /* Makes image cover the entire container */
+    background-position: start; /* Keeps image centered */
+    height: 80vh; /* Full viewport height */
+    width: 80%; /* Full width */
+  }
+  
+  .typescript{
+    margin: 2rem 0px 0px 40rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+  }
+  
+  .typescript> :nth-child(1) {
+      font-family: "Dosis", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: bolder;
+      font-size: 70px;
+      text-align: left;
+      color: #ffffff;
+  
+  }
+  .typescript> :nth-child(2) {
+      font-family: "Dosis", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: bolder;
+      font-size: 100px;
+      margin: -10px;
+      padding-left: 50px;
+      color: black;
+  }
+  
+  .typescript> :nth-child(3) {
+      font-family: "Dosis", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: bolder;
+      font-size: 150px;
+      margin-top: -10px;
+      padding-left: 80px;
+      color: #ffffff;
+     
+   
+  }
+  .typescript> :nth-child(4) {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3f423a;
+    line-height: 25px;
+    margin: 20px 0px 10px;
+  
+  }
+  .typescript> :nth-child(5) {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3f423a;
+    line-height: 25px;
+    margin:0px 0px 10px;
+  
+  }
+  .btn-css{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 10px;
+  }
+  .btn1 {
+    width: 40%;
+    height: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #8f9389;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  .btn1:hover {
+    background-color: #6e746b;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    .hamburger {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    /* Hide navigation lists initially */
+    .nav-ul,
+    .icons-ul {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      margin-top: 1rem;
+      padding-left: 0; /* Remove default UL padding */
+    }
+    
+    /* Show on toggle (e.g. JavaScript adds .show) */
+    .nav-ul.show,
+    .icons-ul.show {
+      display: flex;
+    }
+    
+    /* Each item spacing */
+    .nav-ul li,
+    .icons-ul li {
+      padding: -40px;
+      border-bottom: 1px solid #eee; /* Optional separator */
+    }
+    
+    /* Style the links */
+    .nav-ul li a,
+    .icons-ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      display: block;
+      width: 100%;
+      transition: color 0.3s;
+    }
+    
+    .nav-ul li a:hover,
+    .icons-ul li a:hover {
+      color: #8f9389;
+    }
+    
+    .sec1 {
+      border-radius: 20px;
+      height: 110vh;
+      background-color: #bec4b6;
+      display: flex;
+    }
+  
+    .background {
+      opacity: 1;
+      border-radius: 20px;
+      background-image: url("assets/bg.webp");
+      background-repeat: no-repeat;
+      background-size: 90%; /* Makes image cover the entire container */
+      background-position: start; /* Keeps image centered */
+      height: 100%; /* Full viewport height */
+      width: 100%; /* Full width */
+    }
+  
+    .typescript{
+      margin: 22rem 0px 0px 0px;
+      width: 100%;
+      height: 65%;
+      
+    }
+    
+    .typescript> :nth-child(1) {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-size: 43px;
+        padding-left: 10px;
+        color: #ffffff;
+        
+    
+    }
+    .typescript> :nth-child(2) {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-size: 65px;
+        
+        color: black;
+       
+    }
+    
+    .typescript> :nth-child(3) {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-size: 85px;
+        
+        color: #ffffff;
+       
+     
+    }
+    .typescript> :nth-child(4) {
+      font-family: "Dosis", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 400;
+      color: #3f423a;
+      line-height: 25px;
+      margin: 20px 0px 10px;
+    
+    }
+    .typescript> :nth-child(5) {
+      font-family: "Dosis", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 400;
+      color: #3f423a;
+      line-height: 25px;
+      margin: 20px 0px 10px;
+    
+    }
+    .btn-css{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      margin: 10px 0px 10px;
+    }
+    .btn1{
+      width: 40%;
+      border-radius: 2rem;
+      border-style: none;
+      height: 100%;
+      font-size: 16px;
+  
+    }
+  }
+  @media (min-width: 960px) and (max-width: 1024px) {
+    .sec1 {
+      margin: 30px;
+      height: 100%;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .background {
+      width: 50%;
+      height: 500px;
+      background-size: 90%;
+      background-position: left;
+    }
+  
+    .typescript {
+      width: 80%;
+      height: 100%;
+      margin: 0px 0px 0px 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+     
+    }
+  
+    .typescript > :nth-child(1) {
+      font-size: 55px;
+      color: #ffffff;
+    }
+  
+    .typescript > :nth-child(2) {
+      font-size: 80px;
+      color: black;
+      padding-left: 30px;
+    }
+  
+    .typescript > :nth-child(3) {
+      font-size: 100px;
+      color: #ffffff;
+      padding-left: 40px;
+    }
+    .btn-css{
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      width: 100%;
+      height: 100%;
+      margin: 10px 0px 10px;
+    }
+    .btn1{
+      width: 50%;
+      border-radius: 2rem;
+      border-style: none;
+      height: 50px;
+      font-size: 16px;
+    
+    }
+  }
+  
+  
