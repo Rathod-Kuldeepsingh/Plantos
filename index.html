@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantos.com</title>
-    <link rel="Stylesheet" href="style.css">
+    <link rel="Stylesheet" href="style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..."
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-</head>
-<body>
-   <main>
-    <nav>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
         <h1>Plantos.</h1>
         <button class="hamburger" aria-label="Toggle menu">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <ul class="nav-ul">
           <li><a href="#shop">Shop</a></li>
           <li><a href="#featured">Featured</a></li>
@@ -30,38 +30,106 @@
         </ul>
         <ul class="icons-ul">
           <li></li>
-            <li><a href=""><i class="fa-solid fa-magnifying-glass" color="black"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-cart-shopping" color="black"></i></a></li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-magnifying-glass" color="black"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-cart-shopping" color="black"></i
+            ></a>
+          </li>
         </ul>
       </nav>
-        <section class="sec1">
-          <div class="background">
-            <div class="typescript">
-                <span>The</span>
-                <span>Plants</span>
-                <span>Store</span>
-                <span>We love plants like you do</span>
-                <span>Plants Webflow eCommerce Template is<br>a modern and fresh approach of an online store.</span>
-               <div class="btn-css">
-                <button class="btn1">Go Shopping</button>
-               </div>
-            </div>
+      <section class="sec1">
+        <div class="background"></div>
+        <div class="typescript">
+          <span>The</span>
+          <span>Plants</span>
+          <span>Store</span>
+          <span>We love plants like you do</span>
+          <span
+            >Plants Webflow eCommerce Template is<br />a modern and fresh
+            approach of an online store.</span
+          >
+          <div class="btn-css">
+            <button class="btn1">Go Shopping</button>
+          </div>
+          <div class="contact">
+            <span> Call Us Today 97-24697876</span>
+          </div>
         </div>
-        </section>
-      
-   
-   </main>
-   <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navUl = document.querySelector(".nav-ul");
-    const iconsUl = document.querySelector(".icons-ul");
-  
-    hamburger.addEventListener("click", () => {
-      navUl.classList.toggle("show");
-      iconsUl.classList.toggle("show");
-    });
-  </script>
-</body>
+      </section>
+      <div class="heading1">
+        <span class="shop1">Shop All</span>
+      </div>
+      <div class="cart1">
+        <div class="product-wrapper">
+          <div class="s1 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Monstera Deliciosa $79.00 USD</p>
+        </div>
 
-  
+        <div class="product-wrapper">
+          <div class="s2 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Snake Plant Laurentii $79.00 USD</p>
+        </div>
+
+        <div class="product-wrapper">
+          <div class="s3 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Philodendron Birkin $79.00 USD</p>
+        </div>
+
+        <div class="product-wrapper">
+          <div class="s4 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Parlor Palm $79.00 USD</p>
+        </div>
+        <div class="product-wrapper">
+          <div class="s5 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Philodendron Green $79.00 USD</p>
+        </div>
+
+        <div class="product-wrapper">
+          <div class="s6 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Peperomia Obtusifolia $79.00 USD</p>
+        </div>
+
+        <div class="product-wrapper">
+          <div class="s7 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Siver Satin $79.00 USD</p>
+        </div>
+
+        <div class="product-wrapper">
+          <div class="s8 card">
+            <button class="hover-btn">Visit Product</button>
+          </div>
+          <p class="caption">Pothos Jade $79.00 USD</p>
+        </div>
+      </div>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navUl = document.querySelector(".nav-ul");
+      const iconsUl = document.querySelector(".icons-ul");
+
+      hamburger.addEventListener("click", () => {
+        navUl.classList.toggle("show");
+        iconsUl.classList.toggle("show");
+      });
+    </script>
+  </body>
 </html>
