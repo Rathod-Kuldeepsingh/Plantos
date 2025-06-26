@@ -109,7 +109,7 @@ h1 {
 /* Background */
 .background {
   opacity: 0;
-  animation: fadeInBg 1.2s ease-in-out forwards;
+  animation: fadeInBg 2.2s ease-in-out forwards;
   background-image: url("assets/bg44.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -143,7 +143,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: 1;
-  animation: fadeInText 1s ease-in-out forwards;
+  animation: fadeInText 4s ease-in-out forwards;
 }
 
 @keyframes fadeInText {
@@ -280,6 +280,7 @@ h1 {
   height: 40px;
 }
 .shop1{
+  color: #3f423a;
   font-size: 28px;
 }
 
@@ -321,8 +322,11 @@ h1 {
 .s6 { background-image: url(assets/im6.jpeg); }
 .s7 { background-image: url(assets/im7.jpeg); }
 .s8 { background-image: url(assets/im8.jpeg); }
+.s9 { background-image: url(assets/catus.jpeg); }
+.s10 { background-image: url(assets/arc.jpeg); }
 /* Hover Button */
 .hover-btn {
+  cursor: pointer;
   width: 80%;
   position: absolute;
   bottom: 10px;
@@ -349,8 +353,120 @@ h1 {
   margin-top: 0.5rem;
   font-size: 16px;
   font-weight: 600;
-  text-align: center;
+  text-align:center;
   color: #333;
+}
+
+.heading2{
+  margin: 80px 0;
+  width: 100vw;
+  height: auto;
+  background-color:#d7dad3;
+  background-image: url(assets/flower.webp);
+  background-size: contain;
+  background-position: 95% center; 
+  background-repeat: no-repeat;
+
+}
+
+.heading-line{
+  padding: 10px 0;
+  font-family: Inter, sans-serif;
+  font-size: 34px;
+  padding: auto;
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  color: #3f423a;
+}
+.card2{
+  margin: 30px 0;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.grid-3{
+  max-width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card2:hover .hover-btn {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-3px);
+}
+
+.heading3{
+  margin: 80px 0;
+  width: 100vw;
+  height: 60vh;
+}
+
+.heading-line2{
+  
+  font-family: Inter, sans-serif;
+  font-size: 34px;
+  padding: auto;
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  color: #3f423a;
+}
+.grid-4{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card3 {
+  filter: brightness(0.6); /* Dark by default */
+  margin: 30px 0;
+  position: relative;
+  width: 100%;
+  height: 440px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.5s ease, filter 0.4s ease;
+  overflow: hidden;
+}
+
+/* Zoom and brighten on hover */
+.card3:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9); /* Brightens the image */
+}
+
+/* Text styling */
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Show text on hover */
+.card3:hover .image-text {
+  opacity: 1;
+}
+
+.grid-5{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 480px) {
@@ -556,6 +672,114 @@ h1 {
       font-weight: 600;
       text-align: center;
       color: #333;
+    }
+
+    .heading2{
+      margin: 80px 0;
+      width: 100vw;
+      height: auto;
+      background-color:#d7dad3;
+      background-image:none;
+    }
+    
+    .heading-line{
+      padding: 40px 0;
+      font-family: Inter, sans-serif;
+      font-size: 34px;
+      padding: auto;
+      margin: auto;
+      width: 90%;
+      height: 40px;
+      color: #3f423a;
+    }
+    .card2{
+      margin: 30px 0;
+      position: relative;
+      width: 100%;
+      height: 450px;
+      border-radius: 12px;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      overflow: hidden;
+    }
+    .grid-3{
+      max-width: 100%;
+      display: block;
+      justify-content: center;
+    }
+    
+    .card2:hover .hover-btn {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(-3px);
+    }
+    
+    .heading3{
+      margin: 80px 0;
+      width: 100vw;
+      height: 60vh;
+    }
+    
+    .heading-line2{
+      
+      font-family: Inter, sans-serif;
+      font-size: 34px;
+      padding: auto;
+      margin: auto;
+      width: 90%;
+      height: 40px;
+      color: #3f423a;
+    }
+    .grid-4{
+      max-width: 100%;
+      display: block;
+      justify-content: center;
+    }
+    .card3 {
+      filter: brightness(0.6); /* Dark by default */
+      margin: 30px 0;
+      position: relative;
+      width: 100%;
+      height: 440px;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      transition: transform 0.5s ease, filter 0.4s ease;
+      overflow: hidden;
+    }
+    
+    /* Zoom and brighten on hover */
+    .card3:hover {
+      transform: scale(1.05);
+      filter: brightness(0.9); /* Brightens the image */
+    }
+    
+    /* Text styling */
+    .image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      margin: 0;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    
+    /* Show text on hover */
+    .card3:hover .image-text {
+      opacity: 1;
+    }
+    
+    .grid-5{
+      max-width: 100%;
+      display: block;
+      justify-content: center;
     }
     
 }

@@ -12,6 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link> 
+    <link rel="icon" type="image/png" href="assets/pic.png">
   </head>
   <body>
     <main>
@@ -96,7 +98,7 @@
           <div class="s5 card">
             <button class="hover-btn">Visit Product</button>
           </div>
-          <p class="caption">Philodendron Green $79.00 USD</p>
+          <p class="caption">Philodendron Green <span>$79.00 USD</span></p>
         </div>
 
         <div class="product-wrapper">
@@ -120,6 +122,89 @@
           <p class="caption">Pothos Jade $79.00 USD</p>
         </div>
       </div>
+      <div class="heading2">
+         <div  class="heading-line">
+          <span>Featured</span>
+         </div>
+         <section class="grid-3">
+          <div class="product-wrapper">
+            <div class="s1 card2">
+              <button class="hover-btn">Visit Product</button>
+            </div>
+            <p class="caption">Monstera Deliciosa $79.00 USD </p>
+          </div>
+          <div class="product-wrapper">
+            <div class="s2 card2">
+              <button class="hover-btn">Visit Product</button>
+            </div>
+            <p class="caption">Snake Plant Laurentii $79.00 USD</p>
+          </div>
+          <div class="product-wrapper">
+            <div class="s3 card2">
+              <button class="hover-btn">Visit Product</button>
+            </div>
+            <p class="caption">Philodendron Birkin $79.00 USD</p>
+          </div>
+        </section>
+      </div>
+      <div class="categories">
+        <div class="heading3">
+          <div class="heading-line2">
+            <span>Category</span>
+            <section class="grid-4">
+              <div class="product-wrapper">
+                <div class="s9 card3">
+                  <h2 class="image-text">Cactus</h2>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="s2 card2">
+                  <button class="hover-btn">Visit Product</button>
+                </div>
+                <p class="caption">Snake Plant Laurentii $79.00 USD</p>
+              </div>
+              <div class="product-wrapper">
+                <div class="s4 card2">
+                  <button class="hover-btn">Visit Product</button>
+                </div>
+                <p class="caption">Parlor Palm $79.00 USD</p>
+              </div>
+              <div class="product-wrapper">
+                <div class="s6 card2">
+                  <button class="hover-btn">Visit Product</button>
+                </div>
+                <p class="caption">Peperomia Obtusifolia $79.00 USD</p>
+              </div>
+            </section>
+            <section class="grid-5">
+              <div class="product-wrapper">
+                <div class="s10 card3">
+                  <h2 class="image-text">Araceae</h2>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="s1 card2">
+                  <button class="hover-btn">Visit Product</button>
+                </div>
+                <p class="caption">Monstera Deliciosa $79.00 USD</p>
+              </div>
+              <div class="product-wrapper">
+                <div class="s3 card2">
+                  <button class="hover-btn">Visit Product</button>
+                </div>
+                <p class="caption">Philodendron Birkin $79.00 USD</p>
+              </div>
+              <div class="product-wrapper">
+                <div class="s5 card2">
+                  <button class="hover-btn">Visit Product</button>
+                </div>
+                <p class="caption">
+                  Philodendron Green $79.00 USD</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
     <script>
       const hamburger = document.querySelector(".hamburger");
@@ -129,7 +214,20 @@
       hamburger.addEventListener("click", () => {
         navUl.classList.toggle("show");
         iconsUl.classList.toggle("show");
+        
       });
+      document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".hover-btn");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const productName = this.parentElement.nextElementSibling.textContent;
+        alert(`You clicked on: ${productName}`);
+        // Optional: Redirect
+        // window.location.href = "your-product-link.html";
+      });
+    });
+  });
     </script>
   </body>
 </html>
